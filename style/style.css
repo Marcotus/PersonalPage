@@ -1,0 +1,196 @@
+:root{
+  --button1: #f51111;
+  --button2: #1845d9;
+  --button3: #c118db;
+  --button4: #51ff00;
+  --button5: #f0c800;
+  --button6: #f0c800;
+  --button7: #2d13be;
+  --button8: #dc0909;
+  --button9: #03e9f4;
+}
+
+*{
+  font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+*:active, *:visited{
+  border: none;
+}
+
+body{
+  background: black;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+}
+
+h1{
+  background: linear-gradient(45deg, #FF0000, #FF8000, #80FF00, #00FF00, #00FF80, #00FFFF, #0080FF, #0000FF, #7F00FF, #FF00FF, #FF007F, #ff002f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline;
+  position: relative;
+  background-size: 500%;
+  animation: anim 60s infinite;
+  font-size: 4.5em;
+}
+
+h2{
+  color: white;
+}
+
+@keyframes anim {
+  10%{
+    background-position: 50%;
+  }
+  20%{
+    background-position: 100%;
+  }
+  30%{
+    background-position: 150%;
+  }
+  40%{
+    background-position: 200%;
+  }
+  50%{
+    background-position: 250%;
+  }
+  60%{
+    background-position: 300%;
+  }
+  70%{
+    background-position: 350%;
+  }
+  80%{
+    background-position: 400%;
+  }
+  90%{
+    background-position: 450%;
+  }
+  100%{
+    background-position: 500%;
+  }
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+main div{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  min-width: 10em;
+  max-width: 15em;
+  margin: 0 5%;
+  text-align: center;
+}
+
+main div section{
+  width: 100%;
+  height: 100%;
+}
+
+a{
+  color: white;
+  padding: 1em;
+  margin: 1em;
+  height: 4em;
+  text-decoration: none;
+  overflow: hidden;
+  transition: .5s;
+  /* border-radius: 1.5em; */
+  text-align: center;
+}
+
+a img{
+  max-height: 4em;
+  max-width: 4em;
+}
+
+.joy .yt img{
+  padding-top: .5em;
+}
+
+a:hover{
+  color: white;
+}
+
+
+
+.joy .yt:hover{
+  background: var(--button1);
+  box-shadow: 0 0 5px var(--button1),
+              0 0 25px var(--button1),
+              0 0 50px var(--button1),
+              0 0 200px var(--button1);
+}
+
+.joy .nm:hover{
+  background: var(--button2);
+  box-shadow: 0 0 5px var(--button2),
+              0 0 25px var(--button2),
+              0 0 50px var(--button2),
+              0 0 200px var(--button2);
+}
+
+.joy .ll:hover{
+  background: var(--button3);
+  box-shadow: 0 0 5px var(--button3),
+              0 0 25px var(--button3),
+              0 0 50px var(--button3),
+              0 0 200px var(--button3);
+}
+
+.useful .tw:hover{
+  background: var(--button4);
+  box-shadow: 0 0 5px var(--button4),
+              0 0 25px var(--button4),
+              0 0 50px var(--button4),
+              0 0 200px var(--button4);
+}
+
+.useful .hs:hover{
+  background: var(--button5);
+  box-shadow: 0 0 5px var(--button5),
+              0 0 25px var(--button5),
+              0 0 50px var(--button5),
+              0 0 200px var(--button5);
+}
+
+.useful .fhs:hover{
+  background: var(--butto6);
+  box-shadow: 0 0 5px var(--button6),
+              0 0 25px var(--button6),
+              0 0 50px var(--button6),
+              0 0 200px var(--button6);
+}
+
+.hva:hover{
+  background: var(--button7);
+  box-shadow: 0 0 5px var(--button7),
+              0 0 25px var(--button7),
+              0 0 50px var(--button7),
+              0 0 200px var(--button7);
+}
+
+.work .efteling:hover{
+  background: var(--button8);
+  box-shadow: 0 0 5px var(--button8),
+              0 0 25px var(--button8),
+              0 0 50px var(--button8),
+              0 0 200px var(--button8);
+}
+
+.work .agenda:hover{
+  background: var(--button9);
+  box-shadow: 0 0 5px var(--button9),
+              0 0 25px var(--button9),
+              0 0 50px var(--button9),
+              0 0 200px var(--button9);
+}
